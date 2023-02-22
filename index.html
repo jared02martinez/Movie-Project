@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Night</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
     <script src="script.js" defer></script>
 </head>
 
@@ -40,7 +41,7 @@
                             <h1 class="header__title">The Best Place for an Online Movie Date</h1>
                             <div class="header__input--wrapper">
                                 <label class="input__label">Search</label>
-                                <input class="header__input" type="text" placeholder="Search by Title or Keyword"
+                                <input class="header__input" type="text" placeholder="Search by title or keyword"
                                     onchange="renderMovies()">
                             </div>
                         </div>
@@ -65,10 +66,11 @@
                                 <option value="MOVIES">Movies</option>
                                 <option value="SERIES">Series</option>
                                 <option value="EPISODES">Episodes</option>
+                                <option value="ALL">All</option>
                             </select>
                         </div>
                         <div class="movie__list">
-                            <i class="fas fa-spinner movies__loading--spinner"></i>
+
                         </div>
                     </div>
                 </div>

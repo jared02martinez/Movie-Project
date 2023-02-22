@@ -32,7 +32,7 @@ img {
 }
 
 .container {
-    padding: 96px 0;
+    padding: 96px 32px;
 }
 
 .row {
@@ -226,14 +226,39 @@ select {
     margin-bottom: 12px;
 }
 
-.fa-spinner {
+.movies__loading {
     display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 60px;
-    font-size: 60px;
+    font-size: 40px;
     color: #242424;
+}
+
+.movies__loading .movie {
+    display: none;
+}
+
+.movies__loading .movies__loading--spinner {
+    display: block !important;
+}
+
+.movies__loading--spinner {
+    display: none !important;
+}
+
+.fa-spinner {
     animation: rotate 600ms infinite linear;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 /*
@@ -283,4 +308,95 @@ footer {
     margin-top: 48px;
     font-size: 16px;
     color: #242424;
+}
+
+/*
+
+RESP0NSIVENESS
+
+*/
+
+@media (max-width: 940px) {
+    .header__title {
+        font-size: 36px;
+    }
+
+    .section__title {
+        font-size: 28px;
+    }
+
+    .movie__title {
+        font-size: 16px;
+    }
+
+    .movie__year,
+    .movie__type {
+        font-size: 14px;
+    }
+
+    .movie {
+        width: 100%;
+        max-width: calc(100% / 3)
+    }
+}
+
+@media (max-width: 768px) {
+    .header__title {
+        font-size: 30px;
+    }
+
+    .input__label {
+        font-size: 16px;
+    }
+
+    .section__title {
+        font-size: 24px;
+    }
+
+    .movie {
+        width: 100%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav__link--anchor {
+        display: none;
+    }
+
+    .header__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header__description {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .header__title {
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    .header__input--wrapper {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .header__img--wrapper {
+        width: 100%;
+    }
+
+    .section__header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section__title {
+        font-size: 20px;
+        margin-bottom: 32px;
+    }
 }
