@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    padding: 96px 0;
+}
+
+.row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.link__hover-effect:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: -3px;
+    left: 0;
+    transition: all 300ms ease;
+}
+
+.no-cursor {
+    cursor: not-allowed;
+}
+
+/*
+
+NAV
+
+*/
+
+nav {
+    padding: 0 32px;
+    background-color: #f7ecd6;
+}
+
+.nav__wrapper {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo {
+    color: #f38585;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav__links {
+    display: flex;
+    align-items: center;
+}
+
+.nav__link {
+    position: relative;
+    display: flex;
+    margin-left: 36px;
+}
+
+.link__hover-effect--red:hover:after {
+    background-color: #EB1D36;
+}
+
+.nav__link--anchor {
+    color: #f38585;
+    font-weight: 700;
+    font-size: 18px;
+    transition: all 300ms ease;
+}
+
+.nav__link--anchor:hover {
+    color: #EB1D36;
+}
+
+.nav__link--primary {
+    color: white;
+    background-color: #EB1D36;
+    padding: 12px 20px;
+    border-radius: 40px;
+    font-size: 18px;
+    font-weight: 700;
+    transition: all 300ms ease;
+}
+
+.nav__link--primary:hover {
+    background-color: #9c1222;
+}
+
+/*
+
+HEADER
+
+*/
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__description {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.header__img--wrapper {
+    width: 45%;
+}
+
+.header__title {
+    color: #EB1D36;
+    font-size: 40px;
+    line-height: 1.75;
+}
+
+.header__input--wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.input__label {
+    font-size: 20px;
+    font-weight: 500;
+    color: #242424;
+    margin: 0 0 12px 8px;
+}
+
+.header__input {
+    width: 100%;
+    max-width: 450px;
+    padding: 12px 16px;
+    border-radius: 16px;
+    border: 2px solid #242424;
+    transition: all 300ms ease;
+}
+
+.header__input:focus {
+    outline: none;
+    border-color: #f38585;
+}
+
+/*
+
+MOVIES
+
+*/
+
+.section__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section__title {
+    font-size: 30px;
+    color: #242424;
+}
+
+select {
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid #242424;
+    color: #606266;
+    height: 40px;
+    line-height: 40px;
+    outline: none;
+    padding: 0 16px;
+    width: 100%;
+    max-width: 200px;
+}
+
+.movie__list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie {
+    width: 100%;
+    max-width: 25%;
+    padding: 50px;
+    cursor: not-allowed;
+}
+
+.movie__description {
+    padding-top: 16px;
+    text-align: center;
+}
+
+.movie__title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.fa-spinner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    font-size: 60px;
+    color: #242424;
+    animation: rotate 600ms infinite linear;
+}
+
+/*
+
+FOOTER
+
+*/
+
+footer {
+    background-color: #CFD2CF;
+    padding: 0 32px;
+}
+
+.footer__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__logo {
+    margin-bottom: 56px;
+    color: #f38585;
+}
+
+.footer__links {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__link {
+    position: relative;
+}
+
+.link__hover-effect--black:hover:after {
+    background-color: #242424;
+}
+
+.footer__link--anchor {
+    font-size: 18px;
+    color: #242424;
+}
+
+.footer__copyright {
+    margin-top: 48px;
+    font-size: 16px;
+    color: #242424;
+}

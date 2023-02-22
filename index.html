@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Night</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <section id="landing">
+        <nav>
+            <div class="row">
+                <div class="nav__wrapper">
+                    <h1 class="nav__logo">Movie Night</h1>
+                    <ul class="nav__links">
+                        <li class="nav__link">
+                            <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--red">Home</a>
+                        </li>
+                        <li class="nav__link">
+                            <a href=""
+                                class="nav__link--anchor link__hover-effect link__hover-effect--red no-cursor">About</a>
+                        </li>
+                        <li class="nav__link">
+                            <a href="#" class="nav__link--primary">Search</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <header id="home">
+            <div class="container">
+                <div class="row">
+                    <div class="header__wrapper">
+                        <div class="header__description">
+                            <h1 class="header__title">The Best Place for an Online Movie Date</h1>
+                            <div class="header__input--wrapper">
+                                <label class="input__label">Search</label>
+                                <input class="header__input" type="text" placeholder="Search by Title or Keyword"
+                                    onchange="renderMovies()">
+                            </div>
+                        </div>
+                        <div class="header__img--wrapper">
+                            <img src="./assets/movie.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>
+
+    <main>
+        <section id="movies">
+            <div class="container">
+                <div class="row">
+                    <div class="section__wrapper">
+                        <div class="section__header">
+                            <h2 class="section__title">Search Results:</h2>
+                            <select id="filter" onchange="filterMovies(event)">
+                                <option value="" disabled selected>Sort</option>
+                                <option value="MOVIES">Movies</option>
+                                <option value="SERIES">Series</option>
+                                <option value="EPISODES">Episodes</option>
+                            </select>
+                        </div>
+                        <div class="movie__list">
+                            <i class="fas fa-spinner movies__loading--spinner"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer__wrapper">
+                    <h1 class="footer__logo">Movie Night</h1>
+                    <ul class="footer__links">
+                        <li class="footer__link">
+                            <a href="#"
+                                class="footer__link--anchor link__hover-effect link__hover-effect--black">Home</a>
+                        </li>
+                        <li class="footer__link">
+                            <a href=""
+                                class="footer__link--anchor link__hover-effect link__hover-effect--black no-cursor">About</a>
+                        </li>
+                        <li class="footer__link">
+                            <a href="#"
+                                class="footer__link--anchor link__hover-effect link__hover-effect--black">Search</a>
+                        </li>
+                    </ul>
+                    <p class="footer__copyright">Copyright&copy; 2023 Movie Night</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
