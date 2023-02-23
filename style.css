@@ -213,6 +213,15 @@ select {
     max-width: 25%;
     padding: 50px;
     cursor: not-allowed;
+    transition: all 300ms ease;
+}
+
+.movie:hover {
+   transform: scale(1.1);
+}
+
+.movie:active {
+   transform: scale(0.9);
 }
 
 .movie__description {
